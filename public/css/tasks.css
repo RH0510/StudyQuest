@@ -1,0 +1,36 @@
+/* Tasks and Deadlines */
+.toolbar { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-bottom: 28px; }
+.toolbar-select { width: auto; min-width: 200px; padding: 12px 40px 12px 16px; border-radius: 14px; box-shadow: var(--shadow); }
+
+.task-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+.task-row {
+  display: flex; align-items: flex-start; gap: 14px; padding: 18px 20px;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 18px; box-shadow: var(--shadow);
+}
+.task-row.overdue { border-left: 5px solid var(--red-600); }
+.task-row.done .task-title strong { text-decoration: line-through; color: var(--muted); }
+.task-row .check { margin-top: 3px; }
+.task-main { flex: 1; min-width: 0; }
+.task-title { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.task-title strong { font-size: 16px; color: var(--ink); word-break: break-word; }
+.task-desc { color: var(--muted); font-size: 14px; margin-top: 4px; white-space: pre-line; word-break: break-word; }
+.task-when { display: flex; align-items: center; gap: 6px; color: var(--muted); font-size: 14px; margin-top: 6px; flex-wrap: wrap; }
+.task-row.done .task-when { color: var(--green-600); font-weight: 600; }
+.task-actions { display: flex; align-items: center; gap: 4px; flex-shrink: 0; }
+
+.deadline-group { margin-bottom: 30px; }
+.deadline-group h2 { display: flex; align-items: center; gap: 10px; font-size: 20px; margin-bottom: 14px; }
+.deadline-group .count { font-size: 13px; padding: 2px 10px; border-radius: 999px; background: var(--surface-muted); color: var(--muted); }
+.tone-red h2 { color: var(--red-600); }
+.tone-red .count { background: var(--red-100); color: var(--red-600); }
+.tone-amber h2 { color: var(--amber-600); }
+.tone-amber .count { background: var(--amber-100); color: var(--amber-600); }
+.tone-amber .task-row { border-left: 5px solid var(--gold-500); }
+.tone-blue h2 .icon { color: var(--blue-600); }
+.group-empty { padding: 4px 2px; }
+
+@media (max-width: 640px) {
+  .task-row { flex-wrap: wrap; padding: 16px; }
+  .task-actions { width: 100%; justify-content: flex-end; }
+  .toolbar-select { min-width: 0; flex: 1; }
+}
