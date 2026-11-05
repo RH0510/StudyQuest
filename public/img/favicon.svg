@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="StudyQuest">
+  <defs>
+    <linearGradient id="sq-shield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#16388A"/>
+      <stop offset="1" stop-color="#0B1F4B"/>
+    </linearGradient>
+  </defs>
+  <path d="M32 3 55 11.5V29c0 15.5-10.2 26-23 31.5C19.2 55 9 44.5 9 29V11.5Z" fill="url(#sq-shield)"/>
+  <path d="M32 7.5 51 14.6V29c0 13-8.3 21.9-19 26.9C21.3 50.9 13 42 13 29V14.6Z" fill="none" stroke="#2D6FE7" stroke-width="1.6" opacity=".55"/>
+  <path d="m32 11.5 2.6 7 7.4.3-5.8 4.6 2 7.1L32 26.4l-6.2 4.1 2-7.1-5.8-4.6 7.4-.3Z" fill="#F2B90A"/>
+  <path d="M15.5 35.5c6-2.2 11.5-1.6 16.5 2.2v13.2c-5-3.5-10.5-4.2-16.5-2.2Z" fill="#FFFFFF"/>
+  <path d="M48.5 35.5c-6-2.2-11.5-1.6-16.5 2.2v13.2c5-3.5 10.5-4.2 16.5-2.2Z" fill="#DCE8FF"/>
+  <path d="M14 49.6c6.5-2.2 12.4-1.5 18 2.6 5.6-4.1 11.5-4.8 18-2.6" fill="none" stroke="#2D6FE7" stroke-width="2.4" stroke-linecap="round"/>
+</svg>
