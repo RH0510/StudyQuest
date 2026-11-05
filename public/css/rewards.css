@@ -1,0 +1,39 @@
+/* Rewards & Badges */
+.rewards-hero { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 30px; }
+.hero-stat { display: flex; align-items: center; gap: 16px; }
+.hero-stat p { font-size: 17px; opacity: .95; }
+.hero-stat strong { font-size: 32px; font-weight: 800; line-height: 1.1; }
+.gold-tile { width: 60px; height: 60px; border-radius: 16px; background: linear-gradient(150deg, #F7D25C, var(--gold-500) 50%, var(--gold-600)); color: var(--navy-900); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.section-title { font-size: 26px; font-weight: 800; margin: 44px 0 20px; }
+.store-note { margin: -12px 0 20px; }
+
+.badge-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 16px; }
+.badge-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 20px; box-shadow: var(--shadow);
+  padding: 22px 14px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 8px;
+}
+.badge-icon { width: 80px; height: 80px; border-radius: 50%; background: #F0F1F3; color: #8A94A6; display: flex; align-items: center; justify-content: center; margin-bottom: 6px; }
+:root[data-theme='dark'] .badge-icon { background: #1E2A44; }
+.badge-card h3 { font-size: 17px; font-weight: 600; color: #50586B; }
+:root[data-theme='dark'] .badge-card h3 { color: var(--muted); }
+.badge-req { display: flex; align-items: center; justify-content: center; gap: 6px; font-size: 14px; color: #8A94A6; line-height: 1.35; }
+.badge-card.earned { border-color: #F7D25C; background: linear-gradient(180deg, var(--gold-100), var(--surface) 70%); }
+.badge-card.earned .badge-icon { background: linear-gradient(150deg, #F7D25C, var(--gold-500) 50%, var(--gold-600)); color: var(--navy-900); box-shadow: 0 8px 18px rgba(236, 158, 6, .35); }
+.badge-card.earned h3 { color: var(--ink); }
+.badge-card.earned .badge-req { color: var(--green-600); font-weight: 600; }
+
+.reward-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.reward-card { display: flex; flex-direction: column; gap: 6px; }
+.reward-icon { width: 60px; height: 60px; border-radius: 14px; background: var(--blue-50); color: var(--blue-600); display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
+.reward-card h3 { font-size: 20px; }
+.reward-card .muted { font-size: 17px; min-height: 52px; }
+.reward-cost { display: flex; align-items: center; gap: 6px; font-weight: 700; color: var(--ink); margin: 14px 0; }
+.reward-cost .icon { color: var(--gold-500); }
+.reward-state { text-align: center; padding: 11px; border-radius: 12px; background: var(--surface-muted); color: var(--muted); font-size: 15px; }
+.reward-state.owned { background: var(--green-100); color: var(--green-600); font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 6px; }
+
+@media (max-width: 1180px) { .badge-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 860px) {
+  .rewards-hero, .reward-grid { grid-template-columns: 1fr; }
+  .badge-grid { grid-template-columns: repeat(2, 1fr); }
+}
